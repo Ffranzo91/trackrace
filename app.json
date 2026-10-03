@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "TrackRace",
+    "slug": "trackrace",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#111318"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.trackrace.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Usiamo la tua posizione per mostrarti le piste kart più vicine a te."
+      }
+    },
+    "android": {
+      "package": "com.trackrace.mobile",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "extra": {
+      "supabaseUrl": "https://vmxqwgbosnzyoqzfcobm.supabase.co",
+      "supabaseAnonKey": "sb_publishable_djCcUvkEm6Vw_8TljqvlCg_43uAio_l"
+    }
+  }
+}
