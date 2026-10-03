@@ -32,7 +32,6 @@ export default function AuthScreen() {
           options: { data: { full_name: fullName } },
         });
         if (error) throw error;
-        Alert.alert('Registrazione completata', 'Controlla la tua email per confermare l\'account.');
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
