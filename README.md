@@ -33,19 +33,9 @@ src/screens/
 ## Prima di avviarla: hai bisogno di almeno una pista nel database
 
 Il database è vuoto finché non aggiungi manualmente qualche pista di prova.
-Nel pannello Supabase, vai su **Table Editor → tracks** e inserisci una riga di test,
-oppure esegui questa query nello **SQL Editor**:
-
-```sql
-insert into tracks (name, address, location, indoor, kids_friendly, allows_minimoto, price_info, status)
-values (
-  'Kartodromo Test',
-  'Via Roma 1, Torino',
-  st_point(7.6869, 45.0703)::geography, -- lng, lat (nota l'ordine!)
-  false, true, true, '25€ / 10 minuti',
-  'active'
-);
-```
+Esegui [`backend/seed.sql`](backend/seed.sql) nello **SQL Editor** di Supabase
+per inserire due piste di esempio già pronte, oppure inseriscine una a mano da
+**Table Editor → tracks**.
 
 ## Schema del database
 
